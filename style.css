@@ -1,0 +1,108 @@
+* {
+    overflow: visible;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #222, #444); /* Градиентный фон */
+    color: #d4d4d4;
+    line-height: 1.6;
+    background-image: url('background.jpeg'); /* Фоновое изображение */
+    background-size: cover; /* Растягиваем фон на весь экран */
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.7); /* Полупрозрачный фон хедера */
+    color: #eee;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: rgba(37, 37, 38, 0.8); /* Полупрозрачный фон секций */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Усиленная тень */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* плавный переход */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Поднимаем секцию при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Усиливаем тень при наведении */
+}
+
+h2 {
+    color: #f0f0f0; /* Более светлый цвет заголовков */
+    border-bottom: 2px solid #888;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #222;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #a7d9ed;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cce6f2;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(51, 51, 51, 0.7); /* Полупрозрачный фон футера */
+    color: #eee;
+    border-top: 2px solid #555;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+.remove_list {
+    list-style-type: none
+}
