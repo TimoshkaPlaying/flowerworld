@@ -6,22 +6,36 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #222, #444); /* Градиентный фон */
-    color: #d4d4d4;
+    color: #fff;
     line-height: 1.6;
-    background-image: url('background.jpeg'); /* Фоновое изображение */
-    background-size: cover; /* Растягиваем фон на весь экран */
-    background-repeat: no-repeat;
-    transition: background-color 0.3s ease;
+    /* Создаем градиентный фон */
+    background: linear-gradient(45deg, #10264f, #143979);
+    /* Добавляем анимированный эффект.  Ключевые кадры определяют изменение фона со временем */
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%; /* Начальная позиция градиента */
+    }
+    50% {
+        background-position: 100% 50%; /* Смещаем градиент */
+    }
+    100% {
+        background-position: 0% 50%; /* Возвращаем градиент в исходное положение */
+    }
 }
 
 header {
-    background-color: rgba(51, 51, 51, 0.7); /* Полупрозрачный фон хедера */
-    color: #eee;
+    position: sticky;
+    top: 0;
+    background-color: #091b3b; /* Затемненный фон для выделения */
+    color: #fff;
     padding: 1rem 0;
     text-align: center;
-    border-bottom: 2px solid #555;
-}
+    border-bottom: 2px solid #eee; /* Светлый разделитель */
+    z-index: 1;
+ }
 
 main {
     padding: 20px;
@@ -29,12 +43,12 @@ main {
 
 section {
     margin-bottom: 20px;
-    background-color: rgba(37, 37, 38, 0.8); /* Полупрозрачный фон секций */
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый */
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Усиленная тень */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* плавный переход */
-}
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out; /* Плавный эффект при наведении */
+ }
 
 section:hover {
     transform: translateY(-5px); /* Поднимаем секцию при наведении */
@@ -58,30 +72,15 @@ li {
 }
 
 a {
-    color: #a7d9ed;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: rgb(143, 197, 199);
 }
-
-a:hover {
-    text-decoration: underline;
-    color: #cce6f2;
-}
-
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: rgba(51, 51, 51, 0.7); /* Полупрозрачный фон футера */
-    color: #eee;
-    border-top: 2px solid #555;
-}
-
-.footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    height: 50px;
-}
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-top: 2px solid #eee;
+ }
 
 nav a {
     color: #eee;
@@ -93,11 +92,6 @@ nav a {
 nav a:hover {
     color: #bbb;
 }
-
-
-
-
-
 
 
 
