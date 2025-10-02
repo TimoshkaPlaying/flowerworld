@@ -7,3 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function Copy() {
+    var Url = document.getElementById("copy_url");
+    navigator.clipboard.writeText(Url.innerHTML)
+    var text = document.getElementById("copy_message");
+    text.style.display = "block"
+    setTimeout(()=> {text.style.display = "none"}, 3000)
+}
