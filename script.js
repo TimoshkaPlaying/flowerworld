@@ -11,7 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
 function Copy() {
     var Url = document.getElementById("copy_url");
     navigator.clipboard.writeText(Url.innerHTML)
-    var text = document.getElementById("copy_message");
+    let text = document.createElement('p')
+    text.classList = "copy_message"
+    text.innerHTML = "текст скопирован"
     text.style.display = "block"
-    setTimeout(()=> {text.style.display = "none"}, 3000)
+    text.style.opacity = "1"
+    document.querySelector('main').appendChild(text)
+    setTimeout(()=> {document.querySelector('.copy_message').remove()}, 2000)
 }
